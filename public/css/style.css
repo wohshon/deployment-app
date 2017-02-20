@@ -1,0 +1,21 @@
+body {
+  padding: 150px;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#main {
+
+	background-color: lightblue;
+	width: 300px;
+	height: 300px;
+		margin: 0 auto; 
+}
+
+#msg {
+	padding-top: 30%;
+	font-size: 450%;
+	font-weight: bold;
+	color: white;
+	width: 35%;
+	margin: 0 auto; 
+}
