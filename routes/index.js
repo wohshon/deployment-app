@@ -7,4 +7,9 @@ router.get('/', function(req, res, next) {
 //  res.render('index', { title: 'Express' });
 });
 
+router.get('/rest', function(req, res, next) {
+        res.send("VERSION 1");
+//  res.render('index', { title: 'Express' });
+});
+
 module.exports = router;
