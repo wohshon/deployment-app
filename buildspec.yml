@@ -5,6 +5,7 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
+      - AWS_REGION=ap-southeast-1
       - $(aws ecr get-login --region $AWS_REGION --no-include-email)
       - REPOSITORY_URI=462542678650.dkr.ecr.ap-southeast-1.amazonaws.com/wohshon/demoapp
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
