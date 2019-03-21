@@ -3,10 +3,17 @@
 	<head>
 		<title>Demo</title>
 		 <link href="css/style.css" rel="stylesheet">
+		<script>
+var url_string ="window.location.href"
+var url = new URL(url_string);
+var ip = url.searchParams.get("ip");
+document.getElementById("ip-div").innerHTML=ip;
+		</script>
 	</head>
 	<body>
 		<div id="main">
 			<div id="msg">v2</div>
 		</div>
+		<div id="ip-div">#{ip}</div>
 	</body>
 </html>

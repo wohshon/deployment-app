@@ -3,8 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	res.sendfile("views/index.html");
-//  res.render('index', { title: 'Express' });
+	var ip = require("ip");
+	console.dir ( ip.address() );
+	//res.sendfile("views/index.html");
+  res.render('index', { title: "demo", ipaddr: ip.address(), version: "v1" });
 });
 
 router.get('/rest', function(req, res, next) {
