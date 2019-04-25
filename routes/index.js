@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 	var ip = require("ip");
 	console.dir ( ip.address() );
 	//res.sendfile("views/index.html");
-  res.render('index', { title: "demo", ipaddr: ip.address(), version: "v1.3" });
+  res.render('index', { title: "demo", ipaddr: ip.address(), version: "v1.4" });
 });
 
 router.get('/rest', function(req, res, next) {
