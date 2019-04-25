@@ -6,11 +6,11 @@ router.get('/', function(req, res, next) {
 	var ip = require("ip");
 	console.dir ( ip.address() );
 	//res.sendfile("views/index.html");
-  res.render('index', { title: "demo", ipaddr: ip.address(), version: "v2" });
+  res.render('index', { title: "demo", ipaddr: ip.address(), version: "v1.1" });
 });
 
 router.get('/rest', function(req, res, next) {
-        res.send("VERSION 1");
+        res.send("VERSION 2");
 //  res.render('index', { title: 'Express' });
 });
 
